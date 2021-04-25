@@ -1,0 +1,18 @@
+ <table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>No of Comments</th>
+            <th>Options </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let blog of BlogPostList">
+            
+            <td>{{blog.Title}}</td>
+            <td>{{blog.BlogComment.length}}</td>
+            <td><a [routerLink]="blog.BlogPostId">View</a></td>
+        </tr>
+    </tbody>
+</table>
+

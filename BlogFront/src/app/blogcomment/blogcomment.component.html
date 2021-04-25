@@ -1,0 +1,7 @@
+<p>blogcomment works!</p>
+<div *ngIf="BlogCommentList.length == 0">
+No comments
+</div>
+<div *ngFor="let comment of BlogCommentList">
+    <div>{{comment.Comment}}</div>
+</div>

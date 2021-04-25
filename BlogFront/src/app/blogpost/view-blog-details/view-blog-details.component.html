@@ -1,0 +1,15 @@
+<div *ngIf="blogPost"> 
+
+<h3>
+    <div align ="left" style="background-color:hsl(199, 100%, 64%);">{{blogPost.Title}} </div>  
+    <div align ="right">Published On: {{publishedOn}}</div>
+</h3>
+<p style="background-color:rgb(255, 252, 71);" height="400" width="300">{{blogPost.Body}}</p>
+
+<h5 >Comments:</h5>
+<ul *ngFor="let comment of blogPost.BlogComment">
+  <li>{{comment.Comment}} </li>
+  <p align ="right">Commented On: {{comment.CommentedOn}}</p>
+</ul>
+
+</div>
